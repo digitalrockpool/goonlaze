@@ -39,8 +39,6 @@ function non_logged_redirect() {
 	endif;
 }
     
-
-
 /* *** Custom Registration URL */
 function custom_register_url( $register_url ) {
   $register_url = get_permalink( $register_page_id = 90 );
@@ -123,3 +121,15 @@ function phone_population_function( $value ) {
 
   return $phone;
 }
+
+/* Remove booking plugin auto update */
+function booked_plugin_updates( $value ) {
+  if( isset( $value->response['booked/booked.php'] ) ) {        
+     unset( $value->response['booked/booked.php'] );
+   }
+   return $value;
+}
+add_filter( 'site_transient_update_plugins', 'booked_plugin_updates' );
+
+/* Disable theme and plugin editor */
+define( 'DISALLOW_FILE_EDIT', true );
