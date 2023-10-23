@@ -1,0 +1,463 @@
+/*
+Theme Name:   Goonlaze Livery Yard
+Theme URI:		https://www.goonlaze.uk
+Description:	Theme by Digital Rockpool
+Author:			  Digital Rockpool
+Author URI:		https://www.digitalrockpool.com/
+Template:		  twentytwentythree
+Version:		  1.0.0
+Text Domain:	goonlaze
+
+
+NOTES TO SELF 
+Title: 24px 400
+Small: 14px 400
+Normal: 16px 400
+Label 16px 500
+Button 14px 400 1px space uppercase
+link 16px 400 #005d8f / £004a72
+
+
+
+# Table of Contents
+  - Topography
+    - Regular Text
+    - Headings
+    - Links
+  - Buttons
+  - Forms
+  - Site Parts
+    - Header
+    - Footer
+    - Main
+  - Booked Plugin Specific
+    - Switched Off Features
+  - Gravity Forms Plugin Specific
+*/
+
+
+/* # Topography
+---------------------------------------------------------------------------------------------------- */
+/* ## Regular Text
+--------------------------------------------- */
+body,
+pre,
+.wp-block-preformatted,
+body #booked-page-form,
+body .booked-modal .bm-window p,
+body #profile-edit #booked-page-form label,
+body #booked-profile-page .booked-profile-appt-list .appt-block,
+body #booked-profile-page p.booked-no-margin,
+body .booked-appt-list .booked-public-appointment-title,
+body .booked-appt-list .timeslot .timeslot-time,
+body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-time, /* For Version 2.3.5 */
+body #booked-profile-page .booked-fea-appt-list .appt-block /* For Version 2.3.5 */ {
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: normal;
+}
+
+/* ## Headings
+--------------------------------------------- */
+h2,
+.gform_wrapper.gravity-theme .gform_heading h2 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.gform_wrapper.gravity-theme .gsection h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h4,
+body #booked-profile-page h4,
+body .booked-appt-list h2,
+body .booked-calendar-wrap .booked-appt-list h2 /* For Version 2.3.5 */ {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.gform_wrapper.gravity-theme .gform_heading {
+  text-align: center;
+}
+
+/* ## Links
+--------------------------------------------- */
+
+a,
+body.page-template-blank a {
+  color: #005D8F;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+body.page-template-blank a:hover,
+body.page-template-blank a:active {
+  color: #004A72;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/* # Buttons
+---------------------------------------------------------------------------------------------------- */
+body .booked-calendar button,
+body .booked-modal input[type=submit].button-primary,
+body #booked-profile-page input[type=submit].button-primary,
+.gform_wrapper.gravity-theme .gform_footer input[type=submit],
+body .booked-modal .field button.cancel,
+.booked-modal button.booked-forgot-goback {
+  background-color: #005D8F;
+  border: 1px solid #005D8F;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 9px 12px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+body .booked-calendar button:hover,
+body .booked-modal input[type=submit].button-primary:hover,
+body #booked-profile-page input[type=submit].button-primary:hover,
+.gform_wrapper.gravity-theme .gform_footer input[type=submit]:hover {
+  background-color: #004A72;
+  border: 1px solid #004A72;
+}
+
+body div.booked-calendar .booked-appt-list .timeslot .timeslot-people button:disabled,
+body div.booked-calendar .booked-appt-list .timeslot .timeslot-people button:disabled:hover,
+body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-people button[disabled],
+body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-people button[disabled]:hover {
+  background-color: #dddddd!important;
+  border-color: #dddddd!important;
+  color: #000000!important;
+  cursor: auto;
+}
+
+body .booked-modal .field button.cancel,
+.booked-modal button.booked-forgot-goback {
+  background-color: #dddddd!important;
+  border-color: #dddddd;
+  color: #000000!important;
+}
+
+body .booked-modal .field button.cancel {
+  background-color: #dddddd!important;
+  border-color: #dddddd;
+}
+
+body #booked-profile-page .booked-profile-appt-list .appt-block .booked-fea-buttons > a.delete {
+  border: 2px solid #000000;
+  border-radius: 50px;
+  color: #000;
+  padding: 0;
+}
+
+body #booked-profile-page .booked-profile-appt-list .appt-block .booked-fea-buttons > a.delete:hover {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+}
+
+/* For Version 2.3.5 */
+body #booked-profile-page .booked-fea-appt-list .appt-block a.delete {
+  color: #000;
+}
+
+
+/* # Forms
+---------------------------------------------------------------------------------------------------- */
+body .booked-form .field label.field-label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body .booked-modal .bm-window p.booked-title-bar,
+body .booked-modal .bm-window p small {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+body .booked-form .field input[type=text],
+body .booked-form .field input[type=password],
+body .booked-form .field input[type=tel],
+body .booked-form .field input[type=email],
+body .booked-form .field textarea,
+.gform_wrapper.gravity-theme input[type=text],
+.gform_wrapper.gravity-theme input[type=password],
+.gform_wrapper.gravity-theme input[type=tel],
+.gform_wrapper.gravity-theme input[type=email],
+.gform_wrapper.gravity-theme textarea {
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+body .booked-form .field .checkbox-radio-block label {
+  font-size: 16px;
+  top: 0;
+}
+
+
+/* # Site Parts
+---------------------------------------------------------------------------------------------------- */
+/* ## Header
+--------------------------------------------- */
+header.wp-block-template-part .header-row {
+  align-items: flex-end;
+}
+
+header nav a.wp-block-navigation-item__content {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+nav .current-menu-item a.wp-block-navigation-item__content,
+nav .current-menu-item a.wp-block-navigation-item__content:hover {
+  color: #005D8F;
+  text-decoration: none;
+  cursor: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  header .is-content-justification-space-between.wp-block-group,
+  footer .is-content-justification-space-between.wp-block-group {
+    justify-content: center;
+  }
+
+  footer .is-content-justification-space-between.wp-block-group {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ## Main
+--------------------------------------------- */
+pre {
+  margin: 0;
+}
+
+.wp-site-blocks {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.page-template-blank .wp-site-blocks,
+.page-template-blank .has-global-padding {
+  padding: 0;
+}
+
+.page-template-blank .wp-block-cover {
+  align-items: flex-start;
+}
+
+body.page-template-blank .is-layout-flex {
+  align-items: stretch;
+}
+
+body.page-template-blank .is-layout-flex .wp-block-site-logo {
+  align-self: center;
+}
+
+
+/* # Booked Plugin Specific
+---------------------------------------------------------------------------------------------------- */
+/* ## Switch Off Features
+--------------------------------------------- */
+body div.booked-calendar .bc-row.days .bc-col, body #booked-profile-page .booked-tabs,
+body .booked-modal .bm-window form p,
+body #booked-profile-page .booked-user-avatar,
+body #booked-profile-page .booked-logout-button,
+body #booked-profile-page .booked-profile-appt-list .appt-block .user,
+body #booked-profile-page .booked-profile-appt-list .appt-block strong,
+body #booked-profile-page .booked-profile-appt-list .appt-block .booked-show-cf,
+body #booked-profile-page .booked-profile-appt-list .appt-block br,
+body #booked-profile-page .booked-profile-appt-list .appt-block .fa-circle-info,
+body #booked-profile-page .booked-profile-appt-list .appt-block .late-appt,
+body #booked-profile-page .booked-form-notice {
+  display: none;
+}
+
+body .booked-modal .bm-window form div p {
+  display: block;
+}
+
+/* For Version 2.3.5 */
+body #booked-profile-page .booked-fea-appt-list .appt-block .user,
+body #booked-profile-page .booked-fea-appt-list .appt-block strong,
+body #booked-profile-page .booked-fea-appt-list .appt-block a.booked-show-cf,
+body #booked-profile-page .booked-fea-appt-list .appt-block br,
+body #booked-profile-page .booked-fea-appt-list .appt-block .booked-icon-info,
+body #booked-profile-page .booked-fea-appt-list .appt-block .late-appt {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  body table.booked-calendar .booked-appt-list .timeslot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body table.booked-calendar .booked-appt-list .timeslot .timeslot-time {
+    display: block;
+  }
+
+  body .booked-appt-list .timeslot .timeslot-time .timeslot-range {
+    display: none;
+  }
+
+  body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button {
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 3px;
+  }
+
+  body .booked-appt-list .booked-public-appointment-title {
+    font-size: 14px;
+  }
+
+  body .booked-calendar-wrap .booked-appt-list .timeslot.timeslot-count-hidden .timeslot-time {
+    background-color: #dddddd!important;
+    border-color: #dddddd!important;
+    border-radius: 0 0 5px 5px;
+    order: 2;
+    padding: 0 0 7px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* ## School Hire Calendar
+--------------------------------------------- */
+body .booked-appt-list .timeslot .timeslot-time {
+  align-items: center;
+  color: #000000;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 0 8px;
+}
+
+body .booked-appt-list .timeslot .timeslot-time .timeslot-range {
+  order: 1;
+  margin-right: 1.75rem;
+}
+
+body .booked-appt-list .timeslot .timeslot-time i.fa-solid {
+  width: 1.25rem;
+}
+
+body .booked-appt-list .booked-public-appointment-title {
+  display: inline-block;
+  order: 2;
+  padding: 0 4px 0 0;
+}
+
+body .booked-appt-list .timeslot .timeslot-time ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  order: 3;
+}
+
+
+/* # Gravity Forms Plugin Specific
+---------------------------------------------------------------------------------------------------- */
+/* ## Password Strenth Indicator
+--------------------------------------------- */
+
+
+
+
+/* *** Gravity Forms *** */
+
+.gform_wrapper.gravity-theme .gform_heading .gform_required_legend {
+  text-align: left;
+}
+
+
+.gform_wrapper.gravity-theme .gfield_label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+body.page-template-blank .gform_wrapper.gravity-theme .gform_footer input[type=submit] {
+  width: 100%;
+}
+
+.gform_wrapper.gravity-theme .gfield_description,
+.gform_wrapper.gravity-theme .ginput_complex label,
+.gform_wrapper.gravity-theme .gform_required_legend {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 3px;
+}
+
+
+.gform_wrapper.gravity-theme .gsection {
+  border-bottom: 0;
+  border-top: 1px solid #ccc;
+  padding: 4px 0 0;
+  margin: 1.5rem 0 0;
+}
+
+
+
+.gform_wrapper.gravity-theme .gsection .gsection_description {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ## Password Strenth Indicator
+--------------------------------------------- */
+.gform_wrapper .gfield_password_strength {
+	background-color: #e9ecef;
+	border: 1px solid #e9ecef;
+	border-radius: 3px;
+	color: #000;
+	font-size: 14px;
+	height: 30px;
+	padding: 3px;
+	width: 100%;
+}
+
+.gform_wrapper .gfield_password_strength.short,
+.gform_wrapper .gfield_password_strength.bad {
+	background-color: #ce211b; 
+	border: 1px solid #ce211b; 
+	color: #ffc2c0;
+	}
+
+.gform_wrapper .gfield_password_strength.good {
+	background-color: #ff9a21;
+	border: 1px solid #ff9a21;
+	color: #ffe4c4;
+}
+
+.gform_wrapper .gfield_password_strength.strong {
+	background-color: #00a74d;
+	border: 1px solid #00a74d;
+	color: #9eeac1;
+}
